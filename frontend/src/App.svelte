@@ -3,11 +3,11 @@
     import Login from './Login.svelte';
     import Register from './Register.svelte';
 
-    // Create a writable store to manage the current page
+    // Bikin Stores buat manage ganti Page
     const currentPage = writable('login');
 
-    // Function to change the current page
-    function changePage(event) { 
+    // Ganti Page
+    function changePage(event) {
         currentPage.set(event.detail);
     }
 </script>
